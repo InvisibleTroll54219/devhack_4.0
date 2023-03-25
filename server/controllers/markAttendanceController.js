@@ -25,13 +25,6 @@ exports.deleteStudents = async (req,res) =>{
         // console.log("hi");
         const course_id  = req.query.id;
         console.log(course_id);
-        // console.log("hi");
-        if(stu.length==0){
-            res.status(400).json({
-                status: "fail",
-                message: err
-            })
-        }
         try{
             const newClass = await Markattendance.deleteMany({course_id: course_id});
             res.status(200).json({
