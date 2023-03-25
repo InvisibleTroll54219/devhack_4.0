@@ -11,4 +11,5 @@ sending attendance reports by date to professor via Email
 * Express JS
 * Node JS
 * Mongo DB
+* Mongoose
 * sendgrid.net
