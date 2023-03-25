@@ -5,4 +5,6 @@ const router = express.Router();
 router
 .route('/')
 .post(markAttendanceController.addAttendance)
+.get(markAttendanceController.sendEmail)
+.delete(markAttendanceController.deleteStudents)
 module.exports = router;
