@@ -1,6 +1,6 @@
 const Markattendance = require("../models/markAttendanceModel");
 const sgMail = require("@sendgrid/mail")
-const API_KEY = "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";
+const API_KEY = "insert-your-api-key";
 sgMail.setApiKey(API_KEY);
 exports.addAttendance = async (req,res) =>{
     console.log("hi");
